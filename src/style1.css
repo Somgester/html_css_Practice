@@ -5,43 +5,33 @@ body {
     background-color: #f4f4f4;
     height: 100vh;
     overflow-x: hidden;
-    /* Hide horizontal scrollbar */
     overflow-y: scroll;
-    /* Add vertical scrollbar and make it always visible */
     width: 100vw;
-    /* Set the width to 100% of the viewport width */
     max-width: 100%;
-    /* Prevent the width from exceeding 100% */
 }
-
 .cont {
     background-color: rgb(37, 37, 58);
     width: 100vw;
     margin: auto;
     overflow: hidden;
 }
-
 .logo img {
     width: 50px;
     height: 50px;
 }
-
 .title {
     font-size: 24px;
     color: yellow;
 }
-
 .title-light {
     color: white;
 }
-
 .search-box {
     background-color: #fff;
     padding: 5px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .search-box input {
     border: none;
     outline: none;
@@ -75,12 +65,6 @@ header .cont {
 .logo {
     flex-grow: 1;
 }
-
-/* .search {
-    flex-grow: 2;
-} */
-
-
 .user {
     flex-grow: 1;
     position: relative;
@@ -108,22 +92,14 @@ header .cont {
     right: 150px;
     color: white;
 }
-
-/* default stylings */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
-/* provides background color to body */
 body {
     background-color: black;
 }
-
-/* ----- container stylings:  
--> centers the whole content of the page 
--> defines width and height for container ----- */
 .container {
     position: relative;
     right: auto;
@@ -135,57 +111,43 @@ body {
     width: 90vw;
     height: fit-content;
 }
-
-
-
 .blocks:hover {
     background-color: white;
     color: black;
 }
-
 .block:hover {
     background-color: white;
     color: black;
 }
-
-
 .main-heading {
     padding: 2rem 0 2rem 0;
 }
 
 .content {
     display: flex !important;
-    justify-content: space-between; /*============================================*/
+    justify-content: space-between;
     width: 100%;
     position: relative;
 }
-
-/* ----- carousel content stylings ----- */
-/* places the carousel content on center of the carousel */
 .carousel-content {
     position: absolute;
-    /*to center the content horizontally and vertically*/
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 50;
 }
-
 .carousel-heading {
     font-size: 3rem;
     color: #308d46;
     margin-bottom: 1rem;
 }
-
 .slideshow {
     height: 100%;
     overflow: hidden;
     position: relative;
-    /* border: 10px solid yellow; */
     width: 60%;
 }
-
 .slideshow-wrapper {
     display: flex;
     width: 400%;
@@ -193,13 +155,10 @@ body {
     position: relative;
     animation: slideshow 20s infinite;
 }
-
-
 .slide {
     width: 100%;
     height: 100%;
 }
-
 .slide-img {
     width: 100%;
     height: 100%;
@@ -210,15 +169,12 @@ body {
     0% {
         left: 0;
     }
-
     10% {
         left: 0;
     }
-
     15% {
         left: -100%;
     }
-
     25% {
         left: -100%;
     }
@@ -226,40 +182,31 @@ body {
     30% {
         left: -200%;
     }
-
     40% {
         left: -200%;
     }
-
     45% {
         left: -300%;
     }
-
     55% {
         left: -300%;
     }
-
     60% {
         left: -200%;
     }
-
     70% {
         left: -200%;
     }
-
     75% {
         left: -100%;
     }
-
     85% {
         left: -100%;
     }
-
     90% {
         left: 0%;
     }
 }
-
 .slide-btn {
     background-color: #bbb;
     border-radius: 50%;
@@ -274,47 +221,37 @@ body {
     transform: translateX(-50%);
     z-index: 70;
 }
-
 .slide-btn-1 {
     left: 45%;
 }
-
 .slide-btn-2 {
     left: 50%;
 }
-
 .slide-btn-3 {
     left: 55%;
 }
-
 .slide-btn-4 {
     left: 60%;
 }
-
 .slide-btn-1:focus~.slideshow-wrapper {
     animation: none;
     left: 0;
 }
-
 .slide-btn-2:focus~.slideshow-wrapper {
     animation: none;
     left: -100%;
 }
-
 .slide-btn-3:focus~.slideshow-wrapper {
     animation: none;
     left: -200%;
 }
-
 .slide-btn-4:focus~.slideshow-wrapper {
     animation: none;
     left: -300%;
 }
-
 .slide-btn:focus {
     background-color: #308d46;
 }
-
 .suggestions {
     display: flex;
     flex-wrap: wrap;
@@ -322,7 +259,6 @@ body {
     color: white;
     background-color: black;
 }
-
 .block {
     display: flex;
     flex-direction: row;
@@ -336,22 +272,18 @@ body {
     font-size: 0.8rem;
     width: 100%;
 }
-
 .block img {
     display: flex;
     flex-direction: row;
     width: 30%;
     height: auto;
 }
-
-
 .blocks p {
     display: flex;
     flex-direction: row;
     width: 90%;
     height: auto;
 }
-
 .blocks img {
     display: flex;
     flex-direction: row;
@@ -359,17 +291,13 @@ body {
     width: 10%;
     height: auto;
 }
-
-
 .container::-webkit-scrollbar {
     display: none;
 }
-
 .container {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-
 .queue {
     color: #c1c1c1;
     width: 100vh;
@@ -383,16 +311,11 @@ body {
     position: relative;
     right: auto;
 }
-
-
-
 .image-row {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    /* Add some space between images */
 }
-
 .image-container {
     position: relative;
     width: 100px;
@@ -402,18 +325,13 @@ body {
     font-weight: bold;
     font-size: 0.8rem;
 }
-
 .image-container img {
     width: 100px;
-    /* Set a specific width */
     height: 100px;
-    /* Set a specific height */
     object-fit: cover;
-    /* This will ensure that your images cover the whole area of the container without distorting their aspect ratios */
     transition: transform 0.3s ease;
     border-radius: 100px;
 }
-
 .play-button {
     position: absolute;
     top: 50%;
@@ -428,16 +346,13 @@ body {
     border-radius: 50%;
     padding: 0.5em;
 }
-
 .image-container:hover .play-button {
     display: block;
     opacity: 1;
 }
-
 .image-container:hover img {
     transform: scale(1.1);
 }
-
 .songs {
     position: relative;
     right: 310px;
@@ -445,7 +360,6 @@ body {
     color: #fff;
     font-weight: bolder;
 }
-
 .artists {
     position: relative;
     right: 300px;
@@ -453,7 +367,6 @@ body {
     font-weight: bolder;
     color: #fff;
 }
-
 .genre {
     display: flex;
     justify-content: space-around;
@@ -461,7 +374,6 @@ body {
     flex-wrap: wrap;
     background-color: rgb(13, 13, 34);
 }
-
 .genre img {
     width: 180px;
     height: 150px;
@@ -472,13 +384,11 @@ body {
     right: 10px;
     border-radius: 100px;
 }
-
 .genre .generes {
     position: relative;
     display: flex;
     flex-direction: row;
 }
-
 .genre .generes .play {
     position: absolute;
     top: 50%;
@@ -489,19 +399,15 @@ body {
     opacity: 0;
     transition: all 0.3s ease-in-out;
 }
-
 .genre .generes:hover img {
     opacity: 1;
 }
-
 .genre .generes:hover~.generes img {
     opacity: 0.3;
 }
-
 .genre .generes:hover .play {
     opacity: 1;
 }
-
 .type {
     position: relative;
     right: 350px;
@@ -509,47 +415,28 @@ body {
     font-weight: bolder;
     color: #fff;
 }
-
 .typo {
     display: flex;
-    /* Aligns items in a single line */
     justify-content: space-between;
-    /* Distributes items evenly */
 }
-
 .other {
     position: relative;
-    /* Needed to position text over image */
     width: 30%;
-    /* Adjust as needed */
 }
-
 .other img {
     width: 225px;
-    /* Adjust as needed */
     height: 150px;
-    /* Adjust as needed */
     object-fit: cover;
-    /* This will ensure that your images cover the full width and height specified without distortion */
 }
-
 .other .text-over-image {
     position: absolute;
-    /* Positions text over image */
     top: 50%;
-    /* Center vertically */
     left: 50%;
-    /* Center horizontally */
     transform: translate(-50%, -50%);
-    /* Ensures text is centered */
     color: white;
-    /* Text color */
     font-size: 2rem;
-    /* Text size */
-    text-align: center;
-    /* Aligns text to center */
+    text-align:center;
 }
-
 .bottom {
     display: flex;
     justify-content: center;
@@ -559,24 +446,20 @@ body {
     color: white;
     border:#308d46 1px solid;
 }
-
 .play {
     display: flex;
     align-items: center;
 }
-
 .play i {
     font-size: 24px;
     margin: 0 10px;
     cursor: pointer;
 }
-
 .play input[type="range"] {
     width: 300px;
     margin: 0 20px;
     cursor: pointer;
 }
-
 .Greet {
     display: flex;
     justify-content: center;
@@ -586,20 +469,17 @@ body {
     padding: 20px;
     margin-top: 20px;
 }
-
 .greetings {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
-
 .greetings h1 {
     font-size: 24px;
     color: wheat;
     margin-bottom: 10px;
 }
-
 .queue {
     max-width: 200px;
     width: 30%;
@@ -613,17 +493,14 @@ body {
     border-color: green;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow-y: scroll;
-    /* border: 1px solid green; */
 }
 .queue::-webkit-scrollbar{
     display: none;
 }
-
 ul {
     list-style-type: none;
     padding: 0;
 }
-
 .play img{
     width: 100px;
     height: auto;
@@ -632,7 +509,6 @@ ul {
     color: red;
     background-color: black;
 }
-
 li {
     margin: 10px 0;
     padding: 10px;
@@ -642,7 +518,6 @@ li {
     transition: background-color 0.3s ease;
     color: seagreen;
 }
-
 li:hover {
     background-color: #c1c1c1;
 }
@@ -651,28 +526,22 @@ li:hover {
     .container {
         width: 80vw;
     }
-
     .carousel-heading {
         font-size: 2rem;
     }
-
     .slide-btn {
         bottom: 5%;
     }
-
     .image-row {
         flex-direction: column;
         align-items: center;
     }
-
     .image-container {
         margin-bottom: 1rem;
     }
-
     .other {
         width: 100%;
     }
-
     h8{
         position: relative;
         left: 10px;
@@ -680,29 +549,23 @@ li:hover {
     }
     
 }
-
 @media screen and (max-width: 500px){
     .container {
         width: 90vw;
     }
-
     .carousel-heading {
         font-size: 1.5rem;
     }
-
     .slide-btn {
         bottom: 5%;
     }
-
     .image-row {
         flex-direction: column;
         align-items: center;
     }
-
     .image-container {
         margin-bottom: 1rem;
     }
-
     .other {
         width: 100%;
     }
@@ -712,12 +575,10 @@ li:hover {
         font-size: 2px !important;
     }
 }
-
 @media screen and (max-width: 400px) {
     .container {
         width: 95vw;
     }
-
     .carousel-heading {
         font-size: 1.2rem;
     }
@@ -725,12 +586,10 @@ li:hover {
     .slide-btn {
         bottom: 5%;
     }
-
     .image-row {
         flex-direction: column;
         align-items: center;
     }
-
     .image-container {
         margin-bottom: 1rem;
     }
@@ -738,27 +597,22 @@ li:hover {
     .other {
         width: 100%;
     }
-
     h8{
         position: relative;
         left: 20px;
         font-size: 2px;
-    }
-    
+    } 
 }
 #both{
     width: 100%;
     display: flex !important;
     justify-content: space-between !important;
     align-items: center;
-    /* border: 2px solid red; */
 }
-
 .row {
     display: flex;
     justify-content: space-between;
 }
-
 .element {
     flex: 1 1 auto;
     border: 1px solid #000;
@@ -767,18 +621,12 @@ li:hover {
     text-align: center;
     color: white;
 }
-
 .imagesss img {
     width: 100px;
-    /* Set a specific width */
     height: 100px;
-    /* Set a specific height */
     object-fit: cover;
-    /* This will ensure that your images cover the whole area of the container without distorting their aspect ratios */
     transition: transform 0.3s ease;
 }
-
-
 .imagesss {
     position: relative;
     width: 100px;
